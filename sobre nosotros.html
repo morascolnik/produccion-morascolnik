@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CASA GIN - sobre nosotros
+        </title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="background-video">
+            <video autoplay muted loop id="myVideo">
+               <source src="../Produccion/imagenes/video casa gin.mp4">
+            </video>
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div class="contenido">
+                <div class="section">
+                    <a href="index.html"><img class="logocasa" src="D:\Desktop\Mora Scolnik\Produccion\imagenes\Casa Gin LOGO-Blanco.png"></a>
+                </div>
+                <h1>- Donde vive el gin -</h1>
+                <nav class="topnav" id="myTopnav">
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre nosotros.html">Sobre nosotros</a>
+                    <a href="carta.html">Carta</a>
+                    <a href="reserva tu mesa.html">Reserva tu mesa</a>
+                    <a href="contactanos.html">Contactanos</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <script>
+                    function toggleMenu() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "topnav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "topnav";
+                      }
+                    }
+                  </script>
+                <div class="parrafo">
+                    <p> Somos Casa Gin, un lugar donde la bebida, el arte y la gastronomia conviven para generar experiencias unicas.
+                     Nuestro equipo está dedicado a mezclar y crear una amplia variedad de tragos para satisfacer todos los gustos. Nuestra extensa selección de ginebras premium, combinada con una cuidadosa selección de tónicas y una variedad de ingredientes frescos y aromáticos, garantiza una experiencia de sabores incomparable. 
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <div class="footer" id="nosotros">
+                    <p class="info"> <a href="https://goo.gl/maps/vC5D1yXRoQ7uxqoa9"> HONDURAS 5799 </a> | TEL.11 6402-9224 </p>
+                    <div class="iconos">
+                        <a href="https://www.instagram.com/casaginarg/"><img class="logos" src="D:\Desktop\Mora Scolnik\Produccion\imagenes\logo ig blanco.png"></a>
+                        <img class="logos" src="D:\Desktop\Mora Scolnik\Produccion\imagenes\whatsap blanco.png">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

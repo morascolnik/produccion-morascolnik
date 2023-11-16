@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tienda - Edna moda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./java.js"></script>
+  </head>
+  <body>
+    <div class="tienda h-100">
+        <div class="container1 text-center">
+          <img class="logo py-2" src="./imagenes/increibleslogo.png">
+          <div id="cart" onclick="openCart()"></div>
+          <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Edna Moda</h5>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn ps-3" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="cartContainer">
+            <div id="cart" onclick="openCart()">
+              <img src="./imagenes/carro-de-la-carretilla.png" width="34" height="34">
+            </div>
+            <span id="cartTotal"></span>
+        </div>
+        <div id="favoritesContainer">
+            <div id="favoritesCounter2" class="favorites-counter"></div>
+            <div id="favoritesBtn" onclick="addToFavorites()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="red" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row mb-5">
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/corsetedna.jpg">
+                        </figure>
+                        <h3>Corset Edna</h3>
+                        <p class="price">$18000</p>
+                        <div class="botones">
+                            <button onclick="addToCart(1)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(1)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/corsetincreible.jpg">
+                        </figure>
+                        <h3>Corset Elasticgirl</h3>
+                        <p class="price">$18000</p>
+                        <div class="botones">
+                            <button onclick="addToCart(2)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(2)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/polleravioleta.jpg">
+                        </figure>
+                        <h3>Pollera violeta</h3>
+                        <p class="price">$24500</p>
+                        <div class="botones">
+                            <button onclick="addToCart(3)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(3)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/cargoincre.jpg">
+                        </figure>
+                        <h3>Cargo Mr.Increible</h3>
+                        <p class="price">$43800</p>
+                        <div class="botones">
+                            <button onclick="addToCart(4)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(4)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/pantalonincre.png">
+                        </figure>
+                        <h3>Pantalon engomado Incre</h3>
+                        <p class="price">$28500</p>
+                        <div class="botones">
+                            <button onclick="addToCart(5)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(5)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/puffermr.jpg">
+                        </figure>
+                        <h3>Puffer Mr.Increible</h3>
+                        <p class="price">$69900</p>
+                        <div class="botones">
+                            <button onclick="addToCart(6)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(6)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/jordanrojas.jpg">
+                        </figure>
+                        <h3>Zapatillas Increibles</h3>
+                        <p class="price">$96000</p>
+                        <div class="botones">
+                            <button onclick="addToCart(7)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(7)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-2">
+                    <div class="product">
+                        <figure>
+                            <img src="./imagenes/carteraelasticgirl.jpg">
+                        </figure>
+                        <h3>Cartera Elasticgirl</h3>
+                        <p class="price">$45000</p>
+                        <div class="botones">
+                            <button onclick="addToCart(8)" class="wide-button">Añadir al carrito</button>
+                            <button onclick="addToFavorites(8)" class="icon-button2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                                   <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="redes w-100 text-center">
+         <a href="https://www.instagram.com/theincredibles/"><img class="icono" src="./imagenes/logo ig blanco.png"></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
